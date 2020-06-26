@@ -8,7 +8,7 @@ function beat() {
         if (sessionStorage.clickcount) {
 			var count = Number(sessionStorage.clickcount);
 			if (count > 9) {
-				count = 1;
+				count = 0;
 			} else {
 				count = count + 1;
 			}

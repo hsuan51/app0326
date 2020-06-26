@@ -6,7 +6,9 @@ $(document).ready(function() {
 		var city_select = $(this).text();
 		getTaiwanWeather(city_select);
         $(".collapse").collapse("hide");  // hide collapse 收起
-    });
+	})
+	//$("#fbutton").addClass("disabled");
+	;
 	
 	function getTaiwanWeather(city_name) {
 		//Weather Forecast Open Data API
@@ -98,6 +100,8 @@ $(document).ready(function() {
 		today_T_length = $("#temp").text().length;
 		today_T = $("#temp").text().substring(0,today_T_length - 1);
 		$("#temp").text(F2C(today_T) + "°");
+		$("#cbutton").addClass("disabled");
+		$("#fbutton").removeClass("disabled");
 	});//end cbutton
 	
 	//#fbutton 將攝氏轉華氏
@@ -105,6 +109,8 @@ $(document).ready(function() {
 		today_T_length = $("#temp").text().length;
 		today_T = $("#temp").text().substring(0,today_T_length - 1);
 		$("#temp").text(C2F(today_T) + "°");
+		$("#fbutton").addClass("disabled");
+		$("#cbutton").removeClass("disabled");
 	});//end fbutton
 	
 	//Get present location city name 取得使用者所在縣市

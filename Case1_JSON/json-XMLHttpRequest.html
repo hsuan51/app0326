@@ -14,7 +14,7 @@
 	
 	<script>
 	var xmlhttp = new XMLHttpRequest();
-	var url = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=1";
+	var url = "https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5";
 
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -27,13 +27,15 @@
 	function myFunction(response) {
 		var arr = JSON.parse(response);
 		var i;
-		var out = "<table><tr><th>活動名稱</th><th>報名</th><th>活動日期</th></tr>";
+		var out = "<table><tr><th>活動名稱</th><th>場地名稱</th><th>演出單位</th><th>活動日期</th><th>是否售票</th></tr>";
 
 		for(i = 0; i < arr.length; i++) {
 			out += "<tr><td>" +
 			arr[i].title + "</td><td>" +
-			arr[i].sourceWebName + "</td><td>(" +
-			arr[i].startDate + " ~ " + arr[i].endDate + ")</td></tr>";
+			arr[i].showInfo[0].locationName + "</td><td>" +
+			arr[i].showUnit + "</td><td>(" +
+			arr[i].startDate + " ~ " + arr[i].endDate + ")</td><td style='text-align:center'>" +
+			arr[i].showInfo[0].onSales + "</td></tr>";
 		}
 		out += "</table>";
 		document.getElementById("data_grid").innerHTML = out;

@@ -38,6 +38,10 @@ by Sean Lu
 * Cordova Installation
 * Create a App project with Cordova
 * [Deploy a jQuery Mobile App on Android Phone](http://seansharingblog.blogspot.com/2017/06/cordova-jquery-mobile-web-app-android.html)
+* 環境設定(Windows)
+  - cordova 7.0.0
+  - java 1.8.0
+  - gradle 3.3
 
 ### Case5: jQuery Mobile & Google MAP API
 #### 案例學習內容：

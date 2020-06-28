@@ -44,10 +44,10 @@ by Sean Lu
   - gradle 3.3
   - 將weather-icons.min.css、font-awesome.min.css、jquery.mobile.css、jquery.mobile-1.4.5.min.css、jquery.mobile.js、jquery.mobile-1.4.5.min.js改成CDN方式讀取
 ***
-### * 將app成功部屬到自己手機的畫面
+### 將app成功部屬到自己手機的畫面
   ![image](https://github.com/hsuan51/app0326/blob/master/Case4_weather_Cordova/111963.jpg)
   
-### * 在虛擬機成功部屬的畫面
+### 在虛擬機成功部屬的畫面
   ![image](https://github.com/hsuan51/app0326/blob/master/Case4_weather_Cordova/1593264258911.jpg)
 
 ### Case5: jQuery Mobile & Google MAP API
@@ -55,3 +55,10 @@ by Sean Lu
 * jQuery Mobile & [jQuery Mobile Events](https://api.jquerymobile.com/category/events/)
 * Google MAP API
 * Google 地理資料庫 [Google Places Library](https://developers.google.com/maps/documentation/javascript/places)
+***
+### 將Case5部屬在自己手機的畫面
+  ![image](https://github.com/hsuan51/app0326/blob/master/Case5_jqm_googlemap/S__19775491.jpg)
+  
+  ![image](https://github.com/hsuan51/app0326/blob/master/Case5_jqm_googlemap/S__19775493.jpg)
+
+  ![image](https://github.com/hsuan51/app0326/blob/master/Case5_jqm_googlemap/S__19775494.jpg)

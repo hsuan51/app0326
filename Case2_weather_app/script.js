@@ -83,6 +83,7 @@ $(document).ready(function() {
 			// console.log("Get Taiwan weather complete.");
 		});
 	}
+
 	
 	//華氏攝氏轉換 Celsius & Fahrenheit conversion function
 	function C2F(c_degree) {
